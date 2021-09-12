@@ -1,0 +1,498 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 4500px;
+}
+
+/* start framework*/
+.container {
+  width: 65%;
+  margin: auto;
+  height: 100%;
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+.text-center {
+  text-align: center;
+}
+.upper {
+  text-transform: uppercase;
+}
+.main-color {
+  color: #f7600f;
+}
+button {
+  outline: none;
+}
+/* end framework*/
+
+/* start heading*/
+.header {
+  background: url("tanatos1.jpg");
+  background-size: cover;
+  color: #fff;
+}
+.overlay {
+  background-color: rgba(68, 72, 81, 0.9);
+  height: 100%;
+  width: 100%;
+}
+
+.header .overlay .navbar {
+  overflow: hidden;
+  padding: 20px 0;
+  font-size: 24px;
+}
+.header .overlay .navbar .address {
+  float: left;
+}
+.header .overlay .navbar .address span {
+  font-weight: 600;
+}
+.header .overlay .navbar .links {
+  float: right;
+}
+.header .overlay .navbar .links i {
+  margin-left: 10px;
+  font-size: 33px;
+  cursor: pointer;
+}
+.overlay .header-info {
+  width: 100%;
+  position: absolute;
+}
+.overlay .header-info h1 {
+  font-size: 50px;
+  margin: 0;
+}
+.overlay .header-info p {
+  margin: 20px 0 50px;
+}
+.overlay .header-info button {
+  border-radius: 7px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid rgb(141, 141, 141);
+  padding: 10px 0;
+  width: 20%;
+  transition: all ease-in-out 0.4s;
+  color: rgb(236, 235, 235);
+}
+.overlay .header-info button:hover {
+  background-color: #f7600f;
+  border: 1px solid #f7600f;
+  color: rgb(236, 235, 235);
+}
+.overlay .arrow {
+  border: 2px solid rgb(145, 144, 144);
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.overlay .arrow:hover {
+  background-color: #f7600f;
+  border: 2px solid #f7600f;
+}
+/* end heading*/
+
+/* start categories*/
+.categories {
+  padding: 100px 0;
+}
+.categories .items-box {
+  overflow: hidden;
+}
+.categories .items-box .item {
+  width: 23.5%;
+  float: left;
+}
+.categories .items-box .item:not(:last-of-type) {
+  margin-right: 2%;
+}
+.categories .items-box .item i {
+  font-size: 45px;
+  border: 1px solid rgb(204, 203, 203);
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  color: #f7600f;
+  border-radius: 50%;
+  transition: all ease-in-out 0.4s;
+}
+.categories .items-box .item i:hover {
+  background-color: #f7600f;
+  border: 1px solid #f7600f;
+  color: #fff;
+}
+.categories .items-box .item h4 {
+  margin: 20px 0;
+  color: #676868;
+}
+.categories .items-box .item p {
+  color: #6a6d6e;
+  line-height: 2;
+  font-size: 14px;
+}
+/* end categories*/
+
+/* start subscribe*/
+.subscribe {
+  background: url("tanatos1.jpg");
+  background-size: cover;
+  height: 280px;
+}
+.subscribe input[type="email"] {
+  margin-top: 120px;
+  padding: 12px 10px;
+  border-radius: 10px;
+  width: 45%;
+  border: none;
+  outline: none;
+}
+.subscribe button {
+  border-radius: 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  background-color: #f7600f;
+  border: 1px solid #f7600f;
+  padding: 10px 0;
+  width: 20%;
+  color: rgb(236, 235, 235);
+}
+/* end subscribe*/
+
+/* start our works*/
+.our-works {
+  padding: 80px 0;
+}
+.our-works h2 {
+  font-weight: 550;
+  font-size: 35px;
+}
+.our-works p {
+  margin: 10px 0 80px;
+  line-height: 2;
+  font-size: 14px;
+}
+.our-works .gallery-box {
+  overflow: hidden;
+}
+.our-works .gallery-box .gallery {
+  float: left;
+  width: 31.6666666%;
+  height: 300px;
+  margin-bottom: 2.5%;
+  border-radius: 10px;
+  position: relative;
+}
+.our-works .gallery-box .gallery:nth-of-type(2),
+.our-works .gallery-box .gallery:nth-of-type(5),
+.our-works .gallery-box .gallery:nth-of-type(8) {
+  margin: 0 2.5%;
+}
+.our-works .gallery-box .gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.our-works .gallery-box .gallery .over {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(247, 96, 15, 0.8);
+  border-radius: 10px;
+  color: #fff;
+  display: none;
+}
+.our-works .gallery-box .gallery:hover .over {
+  display: block;
+  transition: all ease-in-out 0.5s;
+}
+.our-works .gallery-box .gallery .over h3 {
+  margin-top: 70px;
+  font-weight: 550;
+  font-size: 20px;
+}
+.our-works .gallery-box .gallery .over p {
+  margin-bottom: 30px;
+  margin-top: 15px;
+  line-height: 2;
+  font-size: 13px;
+}
+.our-works .gallery-box .gallery .over button {
+  width: 50%;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #f7600f;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+  outline: none;
+}
+.our-works .gallery-box .gallery .over button:hover {
+  background-color: #fff;
+  color: #f7600f;
+}
+.our-works .show-more {
+  margin-top: 60px;
+  width: 20%;
+  background-color: transparent;
+  border: 1px solid rgb(189, 188, 188);
+  color: rgb(97, 97, 97);
+  border-radius: 10px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: 550;
+  transition: all ease-in-out 0.4s;
+  outline: none;
+}
+.our-works .show-more:hover {
+  background-color: #f7600f;
+  color: #fff;
+}
+/* end our works*/
+
+/* start testim*/
+.testim {
+  background: url("tanatos1.jpg");
+  background-size: cover;
+  color: rgb(226, 225, 225);
+}
+.testim .overlay {
+  padding: 80px 0;
+  position: relative;
+}
+
+.testim .overlay .opinion img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.testim .overlay .opinion p {
+  line-height: 2;
+  margin: 30px 0;
+  font-style: italic;
+}
+.testim .overlay .opinion span {
+  font-weight: bold;
+}
+.testim .overlay .chevrons {
+  font-size: 40px;
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 10px);
+  overflow: hidden;
+  padding: 0 30px;
+}
+.testim .overlay .chevrons .fa-chevron-left {
+  float: left;
+  cursor: pointer;
+}
+.testim .overlay .chevrons .fa-chevron-right {
+  float: right;
+  cursor: pointer;
+}
+/* end testim*/
+
+/*Start our team */
+.our-team {
+  padding: 80px 0;
+}
+.our-team h2 {
+  font-weight: 550;
+  font-size: 35px;
+}
+.our-team h2 ~ p {
+  margin: 10px 0 80px;
+  line-height: 2;
+  font-size: 14px;
+}
+.our-team .team-box {
+  overflow: hidden;
+}
+.our-team .team-box .person {
+  float: left;
+  width: 23%;
+  filter: gray;
+  filter: grayscale(0.7);
+  border-radius: 5px;
+  position: relative;
+}
+.our-team .team-box .person:hover {
+  filter: none;
+  filter: grayscale(0);
+}
+.our-team .team-box .person::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 217px;
+  background-color: #f7600f;
+  width: 100%;
+  height: 3px;
+  z-index: 10;
+  display: none;
+}
+.our-team .team-box .person:hover::after {
+  display: block;
+}
+.our-team .team-box .person:hover h4 {
+  color: #5a5b5c;
+}
+
+.our-team .team-box .person:hover .social-icons i:nth-of-type(1) {
+  background-color: rgb(66, 103, 178);
+}
+.our-team .team-box .person:hover .social-icons i:nth-of-type(2) {
+  background-color: #1da1f2;
+}
+.our-team .team-box .person:hover .social-icons i:nth-of-type(3) {
+  background-color: #d04539;
+}
+.our-team .team-box .person:hover p {
+  color: #5a5b5c;
+}
+.our-team .team-box .person:not(:last-of-type) {
+  margin-right: 2.6666667%;
+}
+.our-team .team-box .person img {
+  width: 100%;
+  height: 220px;
+  border-radius: 5px;
+}
+.our-team .team-box .person h4 {
+  margin: 20px 0;
+  font-weight: 600;
+  color: #9ea2a5;
+}
+.our-team .team-box .person p {
+  line-height: 2;
+  margin: 10px 0;
+  color: #9ea2a5;
+  font-size: 12px;
+}
+.our-team .team-box .social-icons i {
+  background-color: #9ea2a5;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 25px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+}
+/*End  our team */
+
+/*Start contact */
+.contact {
+  background: url("tanatos1.jpg");
+  background-size: cover;
+  color: rgb(236, 235, 235);
+  margin-top: 40px;
+}
+.contact .overlay {
+  padding: 80px 0;
+}
+.contact .overlay h2 {
+  font-weight: 550;
+  font-size: 35px;
+}
+.contact .overlay p {
+  margin: 10px 0 60px;
+  line-height: 2;
+  font-size: 14px;
+}
+.contact .overlay .email-box {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0;
+}
+.contact .overlay .email-box input {
+  width: 48%;
+  border-radius: 10px;
+  padding: 8px 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 30px;
+}
+.contact .overlay .email-box input[type="email"] {
+  float: left;
+}
+.contact .overlay .email-box input[type="text"] {
+  float: right;
+}
+.contact .overlay .email-box textarea {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  padding: 8px 5px;
+}
+.contact .overlay .email-box button {
+  margin: 20px 0;
+  float: left;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #f7600f;
+  border: 1px solid #f7600f;
+  padding: 10px 0;
+  width: 20%;
+  transition: all ease-in-out 0.4s;
+  color: rgb(236, 235, 235);
+}
+.contact .overlay .email-box .social-icons {
+  float: right;
+  margin: 20px 0;
+}
+.contact .overlay .email-box .social-icons i {
+  height: 40px;
+  margin-left: 10px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.contact .overlay .email-box .social-icons i:nth-of-type(1) {
+  background-color: rgb(66, 103, 178);
+}
+.contact .overlay .email-box .social-icons i:nth-of-type(2) {
+  background-color: #1da1f2;
+}
+.contact .overlay .email-box .social-icons i:nth-of-type(3) {
+  background-color: #d04539;
+}
+/*End contact */
+
+/*Start footer*/
+.footer {
+  background-color: #3b444d;
+  padding: 40px 0;
+  color: #ccd0d3;
+  overflow: hidden;
+}
+.footer span.rights {
+  float: left;
+}
+.footer span.design {
+  float: right;
+}
+/*End footer*/
